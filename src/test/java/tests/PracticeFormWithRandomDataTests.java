@@ -9,19 +9,19 @@ public class PracticeFormWithRandomDataTests extends TestBase {
 
     static String filename = getPicture();
     static File uploadedFile = new File("src/test/resources/" + filename);
-    String firstName = getFirstName();
-    String lastName = getLastName();
-    String userEmail = getEmail();
-    String userGender = getGender();
-    String userPhone = getPhoneNumber();
-    String monthOfBirth = getDateOfBirth()[1];
-    String yearOfBirth = getDateOfBirth()[2];
-    String dayOfBirth = getDateOfBirth()[0];
-    String subject = getSubject();
-    String hobbie = getHobbie();
-    String userAddress = getAddress();
-    String userState = getState();
-    String userCity = getCity(userState);
+    String firstName = getFirstName(),
+         lastName = getLastName(),
+         userEmail = getEmail(),
+         userGender = getGender(),
+         userPhone = getPhoneNumber(),
+         monthOfBirth = getDateOfBirth()[1],
+         yearOfBirth = getDateOfBirth()[2],
+         dayOfBirth = getDateOfBirth()[0],
+         subject = getSubject(),
+         hobbie = getHobbie(),
+         userAddress = getAddress(),
+         userState = getState(),
+         userCity = getCity(userState);
 
     @Test
     public void fillFormTest() {
